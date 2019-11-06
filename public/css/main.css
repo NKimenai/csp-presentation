@@ -1,0 +1,15 @@
+/*!
+ * Website -  v1.0.0 ()
+ * Copyright 2019-2019 NKimenai <nilskimenai@hotmail.nl>
+ * Licensed under MIT (https://github.com/basvdbrink1/csp3
+ */
+
+.logo {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+}
+
+body {
+  background-color: black;
+}
