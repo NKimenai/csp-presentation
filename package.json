@@ -1,11 +1,11 @@
 {
-  "name": "csp3",
+  "name": "csp-presentation",
   "version": "1.0.0",
   "description": "presentation for csp",
   "main": "index.html",
-  "repository": "https://github.com/basvdbrink1/csp3.git",
-  "author": "NKimenai <nilskimenai@hotmail.nl>",
-  "collaborators": "NKimenai <nilskimenai@hotmail.nl>, BasvdBrink, MBreden",
+  "repository": "https://github.com/NKimenai/csp-presentation.git",
+  "author": "NKimenai",
+  "collaborators": "NKimenai https://github.com/NKimenai, basvdbrink1 https://github.com/basvdbrink1, MitchBred https://github.com/MitchBred",
   "license": "GNU GPLv3",
   "private": true,
   "devDependencies": {
