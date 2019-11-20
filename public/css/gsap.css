@@ -7,6 +7,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap");
 nav {
+  background-color: #fff;
   padding: 1rem 5rem;
   box-shadow: 0 2px 4px rgba(51, 51, 51, 0.5);
 }
@@ -92,7 +93,7 @@ h2::after {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #cf4647;
+  background-color: #000;
 }
 
 p {
@@ -112,4 +113,8 @@ p {
   width: 100%;
   height: auto;
   max-height: 100%;
+}
+
+h2::after {
+  background-color: #8cdf00;
 }
