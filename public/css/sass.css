@@ -1,0 +1,115 @@
+/*!
+ * Website -  v1.0.0 ()
+ * Copyright 2019-2019 NKimenai
+ * Licensed under GNU GPLv3 https://github.com/NKimenai/csp-presentation.git
+ * Collaborators NKimenai https://github.com/NKimenai, basvdbrink1 https://github.com/basvdbrink1, MitchBred https://github.com/MitchBred
+ */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap");
+nav {
+  padding: 1rem 5rem;
+  box-shadow: 0 2px 4px rgba(51, 51, 51, 0.5);
+}
+
+nav ul {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  padding: 0.5rem 2rem;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  transition: all .2s;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  transition: all .2s;
+}
+
+nav a[href*="sass"]::after {
+  background: #bf4080;
+}
+
+nav a[href*="gsap"]::after {
+  background: #8cdf00;
+}
+
+nav a[href*="gulp"]::after {
+  background: #cf4647;
+}
+
+nav a:hover {
+  color: #495057;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav .active[href*="sass"] {
+  color: #bf4080;
+}
+
+nav .active[href*="gsap"] {
+  color: #8cdf00;
+}
+
+nav .active[href*="gulp"] {
+  color: #cf4647;
+}
+
+nav .active a::after {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  color: #343a40;
+  font-size: 2rem;
+  font-weight: 500;
+  width: fit-content;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #cf4647;
+}
+
+p {
+  color: #495057;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.row {
+  display: grid;
+  grid-gap: 3rem;
+  padding: 3rem 10%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
