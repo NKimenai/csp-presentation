@@ -1,0 +1,57 @@
+nav {
+  padding: 1rem 5rem;
+  box-shadow: 0 2px 4px rgba(#333, 0.5);
+  ul {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  li {
+    padding: 0.5rem 2rem;
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+    color: $gray-900;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    transition: all .2s;
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 4px;
+      transition: all .2s;
+    }
+    &[href*="sass"]::after {
+      background: $sass-color;
+    }
+    &[href*="gsap"]::after {
+      background: $gsap-color;
+    }
+    &[href*="gulp"]::after {
+      background: $gulp-color;
+    }
+    &:hover{
+      color: $gray-700;
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+  .active {
+    &[href*="sass"] {
+      color: $sass-color;
+    }
+    &[href*="gsap"] {
+      color: $gsap-color;
+    }
+    &[href*="gulp"] {
+      color: $gulp-color;
+    }
+    a::after {
+      width: 100%;
+    }
+  }
+}
