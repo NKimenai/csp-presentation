@@ -9,6 +9,71 @@
 body {
   font-family: 'Montserrat', sans-serif;
   height: 100vh;
-  background-color: #fff;
   display: grid;
+  background-image: linear-gradient(-225deg, #e0e0e0 0%, #fff 48%, #e0e0e0 100%);
+}
+
+.introduction-header {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+  color: #333;
+}
+
+.introduction-header h1 {
+  font-size: 5rem;
+}
+
+.introduction-header h1::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 6px;
+  border-radius: 4px;
+  transition: all .2s;
+  background: linear-gradient(to right, #bf4080 25%, #8cdf00 25%, #8cdf00 75%, #cf4647 50%, #cf4647 75%);
+}
+
+.introduction-header h2 {
+  font-size: 2rem;
+}
+
+.logo-row {
+  max-width: calc(100vw - 200px);
+  margin: 100px auto;
+  max-height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo-row img {
+  width: 100%;
+  height: auto;
+}
+
+.cta {
+  display: flex;
+  margin: auto;
+  width: fit-content;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: #bf4080;
+  padding: 1rem 2rem;
+  border: 4px solid #bf4080;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.cta:hover {
+  color: #bf4080;
+  background-color: #fff;
+}
+
+.cta:focus, .cta:active {
+  background-color: #fff;
+  color: #bf4080;
+  box-shadow: 0 0 0 4px rgba(191, 64, 128, 0.2);
 }
