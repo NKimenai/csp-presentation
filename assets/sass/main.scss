@@ -1,0 +1,13 @@
+// Imports
+@import "variables";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap');
+
+// Scoped styling for this page
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  background-color: $white;
+  display: grid;
+}
