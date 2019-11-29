@@ -6,3 +6,16 @@ h2 {
     background-color: $gulp-color;
   }
 }
+
+.cta {
+  background-color: $gulp-color;
+  border: 4px solid $gulp-color;
+  &:hover {
+    color: $gulp-color;
+  }
+  &:focus,
+  &:active {
+    color: $gulp-color;
+    box-shadow: 0 0 0 4px rgba($gulp-color,0.2);
+  }
+}

@@ -16,3 +16,16 @@ h2 {
 body {
     // background-color: black;
 }
+
+.cta {
+  background-color: $gsap-color;
+  border: 4px solid $gsap-color;
+  &:hover {
+    color: $gsap-color;
+  }
+  &:focus,
+  &:active {
+    color: $gsap-color;
+    box-shadow: 0 0 0 4px rgba($gsap-color,0.2);
+  }
+}

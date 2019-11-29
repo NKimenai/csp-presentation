@@ -27,7 +27,10 @@ const banner = ['/*!\n',
 // Copy third party libraries from /node_modules into /vendor
 function vendor() {
     return src(['node_modules/gsap/dist/gsap.js', 'node_modules/gsap/dist/gsap.min.js'])
-        .pipe(dest(publicDest + 'js/gsap'));
+        .pipe(dest(publicDest + 'js/gsap'))
+        //
+        // .pipe(src(['node_modules/gsap/dist/EasePack.js', 'node_modules/gsap/dist/EasePack.min.js']))
+        // .pipe(dest(publicDest + './js/gsap'));
 }
 
 // Compile all your Sass from your assets folder and put the newly compiled CSS files in your public folder

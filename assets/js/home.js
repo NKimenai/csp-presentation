@@ -12,5 +12,5 @@ TweenMax.from('.introduction-header h2',0.5,{
 TweenMax.from('#sass-logo',0.5,{
     delay:1.5,
     x: 2000,
-    duration:2,
+    duration:2
 })
