@@ -29,7 +29,7 @@ function vendor() {
     return src(['node_modules/gsap/dist/gsap.js', 'node_modules/gsap/dist/gsap.min.js'])
         .pipe(dest(publicDest + 'js/gsap'))
         //
-        // .pipe(src(['node_modules/gsap/dist/EasePack.js', 'node_modules/gsap/dist/EasePack.min.js']))
+        // .pipe(src(['node_modules/gsap/all.js']))
         // .pipe(dest(publicDest + './js/gsap'));
 }
 
@@ -82,8 +82,8 @@ function syncBrowser () {
         server: {
             baseDir: "./"
         },
-        online: true,
-        tunnel: "our-csp-presentation",
+        // online: true,
+        // tunnel: "our-csp-presentation",
         ghostMode: true,
     });
 }
