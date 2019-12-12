@@ -9,12 +9,8 @@ TweenMax.from('.introduction-header h2',0.5,{
     opacity:0
 })
 
-let tl = new TimelineMax({
-    repeat:1, 
-    yoyo:true, 
-    onRepeat:onRepeatHandler,
-    onComplete:onCompleteHandler
-  });
+var tl = new TimelineMax({repeat:30, repeatDelay:1, yoyo:true});
+
 
 //add 3 tweens that will play in direct succession.
 tl.from("#sass-logo", 2, {
