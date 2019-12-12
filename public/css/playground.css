@@ -190,34 +190,5 @@ p {
 }
 
 h2::after {
-  background-color: #8cdf00;
-}
-
-.logo {
-  position: fixed;
-  width: 400px;
-  height: 400px;
-}
-
-body {
-  margin: 0;
-}
-
-canvas {
-  width: 100%;
-  height: 100%;
-}
-
-.cta {
-  background-color: #8cdf00;
-  border: 4px solid #8cdf00;
-}
-
-.cta:hover {
-  color: #8cdf00;
-}
-
-.cta:focus, .cta:active {
-  color: #8cdf00;
-  box-shadow: 0 0 0 4px rgba(140, 223, 0, 0.2);
+  background-color: #89d0f0;
 }
