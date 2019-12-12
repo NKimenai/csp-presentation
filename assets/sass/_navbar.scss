@@ -1,10 +1,17 @@
 nav {
+  background-color: $white;
   padding: 1rem 5rem;
   box-shadow: 0 2px 4px rgba(#333, 0.5);
+  .home {
+    margin: 0;
+    padding: .5rem 2rem;
+  }
+  display: flex;
+  justify-content: space-between;
   ul {
     margin: 0;
-    display: flex;
-    justify-content: flex-end;
+    //display: flex;
+    //justify-content: flex-end;
   }
   li {
     padding: 0.5rem 2rem;
