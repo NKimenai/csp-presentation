@@ -213,3 +213,7 @@ canvas {
   color: #8cdf00;
   box-shadow: 0 0 0 4px rgba(140, 223, 0, 0.2);
 }
+
+.col ul li::before {
+  background-image: url("/public/img/gsap/img_greensock.svg") !important;
+}
