@@ -98,7 +98,7 @@ function devWatch() {
             // directory: true,
         },
         online: true,
-        tunnel: "our-csp-presentation",
+        // tunnel: "our-csp-presentation",
         ghostMode: true,
     });
     watch(assetsFolder + 'sass/**/*.scss').on('change', series(scss, css, browserSync.reload));

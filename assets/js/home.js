@@ -9,10 +9,11 @@ TweenMax.from('.introduction-header h2',0.5,{
     opacity:0
 })
 
-var tl = new TimelineMax({repeat:30, repeatDelay:1, yoyo:true});
 
 
-//add 3 tweens that will play in direct succession.
+var tl = new TimelineMax({repeat:Infinity, repeatDelay:1, yoyo:true});  
+
+
 tl.from("#sass-logo", 2, {
     x:-1000,
     y:600,
@@ -22,26 +23,18 @@ tl.from("#sass-logo", 2, {
 });
 
 
-// TweenMax.from("#sass-logo", 2, {
-//     x:-1000,
-//     y:600,
-//     ease:Elastic.easeOut,
-//     duration:2,
-//     delay:1.5
-// });
-
 TweenMax.from("#gsap-logo", 2, {
     // x:1500,
     y:-700,
     ease:Elastic.easeOut,
     duration:1,
-    delay:1.75
+    delay:2.
 });
 
 TweenMax.from("#gulp-logo", 2, {
-    x:750,
-    y:-300,
-    ease:Bounce.easeOut,
+    x:1000,
+    y:-600,
+    ease:Elastic.easeOut,
     duration:2,
-    delay:2
+    delay:2.5
 });
