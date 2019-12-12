@@ -1,6 +1,15 @@
 @import "variables";
 @import "globals";
 
+.fit {
+  object-fit: contain;
+}
+
+.img-fluid-sass {
+  width: 100%;
+  height: auto;
+}
+
 h2 {
   &::after {
     background-color: $sass-color;

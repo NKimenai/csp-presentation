@@ -151,6 +151,15 @@ p {
   box-shadow: 0 0 0 4px rgba(191, 64, 128, 0.2);
 }
 
+.fit {
+  object-fit: contain;
+}
+
+.img-fluid-sass {
+  width: 100%;
+  height: auto;
+}
+
 h2::after {
   background-color: #bf4080;
 }
