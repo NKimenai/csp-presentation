@@ -25,12 +25,23 @@ const banner = ['/*!\n',
 ].join('');
 
 // Copy third party libraries from /node_modules into /vendor
-function vendor() {
-    return src(['node_modules/gsap/dist/gsap.js', 'node_modules/gsap/dist/gsap.min.js'])
-        .pipe(dest(publicDest + 'js/gsap'))
-        //
-        // .pipe(src(['node_modules/gsap/all.js']))
-        // .pipe(dest(publicDest + './js/gsap'));
+function gsap() {
+    return src([
+        'node_modules/gsap/dist/gsap.js',
+        'node_modules/gsap/dist/gsap.min.js'
+        ])
+        .pipe(dest(publicDest + './js/gsap'));
+}
+
+// Copy third party libraries from /node_modules into /vendor
+function fontawesomeCss() {
+    return src(['./node_modules/@fortawesome/fontawesome-free/css/**'])
+        .pipe(dest(publicDest + './css/fontawesome'));
+}
+
+function fontawesomeWebfont() {
+    return src(['./node_modules/@fortawesome/fontawesome-free/webfonts/**'])
+        .pipe(dest(publicDest + './css/webfonts'));
 }
 
 // Compile all your Sass from your assets folder and put the newly compiled CSS files in your public folder
@@ -98,7 +109,7 @@ function devWatch() {
             // directory: true,
         },
         online: true,
-        tunnel: "our-csp-presentation",
+        // tunnel: "our-csp-presentation",
         ghostMode: true,
     });
     watch(assetsFolder + 'sass/**/*.scss').on('change', series(scss, css, browserSync.reload));
@@ -107,8 +118,8 @@ function devWatch() {
 }
 
 // Export all your gulp tasks so you can call them up your the terminal
-exports.default = series(vendor, scss, css, js);
-exports.vendor = vendor;
+exports.default = series(gsap, fontawesomeCss, fontawesomeWebfont, scss, css, js);
+exports.vendor = parallel(gsap, fontawesomeCss, fontawesomeWebfont);
 exports.css = series(scss, css);
 exports.js = js;
 exports.syncBrowser = syncBrowser;

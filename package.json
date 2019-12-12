@@ -20,6 +20,7 @@
     "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "gsap": "^3.0.0",
     "jquery.easing": "^1.4.1"
   }
