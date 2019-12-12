@@ -57,6 +57,10 @@ nav a[href*="gulp"]::after {
   background: #cf4647;
 }
 
+nav a[href*="playground"]::after {
+  background: #89d0f0;
+}
+
 nav a:hover {
   color: #495057;
 }
@@ -75,6 +79,10 @@ nav .active[href*="gsap"] {
 
 nav .active[href*="gulp"] {
   color: #cf4647;
+}
+
+nav .active[href*="playground"] {
+  color: #89d0f0;
 }
 
 nav .active a::after {

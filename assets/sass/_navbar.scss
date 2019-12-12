@@ -40,6 +40,9 @@ nav {
     &[href*="gulp"]::after {
       background: $gulp-color;
     }
+    &[href*="playground"]::after {
+      background: $playground-color;
+    }
     &:hover{
       color: $gray-700;
       &::after {
@@ -56,6 +59,9 @@ nav {
     }
     &[href*="gulp"] {
       color: $gulp-color;
+    }
+    &[href*="playground"] {
+      color: $playground-color;
     }
     a::after {
       width: 100%;
