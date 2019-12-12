@@ -146,7 +146,7 @@ p {
   width: 60px;
   height: 60px;
   position: absolute;
-  background-image: url("/public/img/gulp.svg");
+  background-image: url("/public/img/yes.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -197,4 +197,8 @@ h2::after {
 .cta:focus, .cta:active {
   color: #cf4647;
   box-shadow: 0 0 0 4px rgba(207, 70, 71, 0.2);
+}
+
+.col ul li::before {
+  background-image: url("/public/img/gulp.svg") !important;
 }
