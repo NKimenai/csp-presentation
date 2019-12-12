@@ -109,6 +109,10 @@ h2::after {
   background-color: #000;
 }
 
+.fit {
+  object-fit: contain;
+}
+
 p {
   color: #495057;
   font-size: 1.2rem;
@@ -187,10 +191,6 @@ p {
   background-color: #fff;
   color: #bf4080;
   box-shadow: 0 0 0 4px rgba(191, 64, 128, 0.2);
-}
-
-.fit {
-  object-fit: contain;
 }
 
 .img-fluid-sass {

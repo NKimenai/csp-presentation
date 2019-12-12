@@ -109,6 +109,10 @@ h2::after {
   background-color: #000;
 }
 
+.fit {
+  object-fit: contain;
+}
+
 p {
   color: #495057;
   font-size: 1.2rem;
