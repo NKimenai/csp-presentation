@@ -24,6 +24,10 @@ h2 {
   }
 }
 
+.fit {
+  object-fit: contain;
+}
+
 p {
   color: $gray-700;
   font-size: 1.2rem;
