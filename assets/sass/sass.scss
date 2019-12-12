@@ -15,3 +15,9 @@ h2 {
     background-color: $sass-color;
   }
 }
+
+.col {
+  ul li::before {
+    background-image: url('/public/img/sass/sass.svg')!important;
+  }
+}

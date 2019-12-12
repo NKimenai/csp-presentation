@@ -30,18 +30,16 @@ function gsap() {
         'node_modules/gsap/dist/gsap.js',
         'node_modules/gsap/dist/gsap.min.js'
         ])
-        .pipe(dest(publicDest + './js/gsap'));
+        .pipe(dest(publicDest + 'js/gsap'));
 }
 
 // Copy third party libraries from /node_modules into /vendor
-function fontawesomeCss() {
-    return src(['./node_modules/@fortawesome/fontawesome-free/css/**'])
-        .pipe(dest(publicDest + './css/fontawesome'));
-}
-
-function fontawesomeWebfont() {
-    return src(['./node_modules/@fortawesome/fontawesome-free/webfonts/**'])
-        .pipe(dest(publicDest + './css/webfonts'));
+function jQuery() {
+    return src([
+        'node_modules/jquery/dist/*',
+        '!node_modules/jquery/dist/core.js'
+        ])
+        .pipe(dest(publicDest + 'js/jquery'))
 }
 
 // Compile all your Sass from your assets folder and put the newly compiled CSS files in your public folder
@@ -118,8 +116,8 @@ function devWatch() {
 }
 
 // Export all your gulp tasks so you can call them up your the terminal
-exports.default = series(gsap, fontawesomeCss, fontawesomeWebfont, scss, css, js);
-exports.vendor = parallel(gsap, fontawesomeCss, fontawesomeWebfont);
+exports.default = series(gsap, jQuery, scss, css, js);
+exports.vendor = parallel(gsap, jQuery);
 exports.css = series(scss, css);
 exports.js = js;
 exports.syncBrowser = syncBrowser;
