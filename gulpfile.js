@@ -73,7 +73,7 @@ function js() {
     //     .pipe(concat('app.min.js'))
     //     .pipe(dest(publicDest + 'js', { sourcemaps: true }))
     // .pipe(browserSync.stream());
-    return src( assetsFolder + 'js/**/*.js', { sourcemaps: true })
+    return src(assetsFolder + 'js/**/*.js', { sourcemaps: true })
         .pipe(uglify())
         .pipe(rename({
             suffix: '.min'
