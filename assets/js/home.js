@@ -14,7 +14,7 @@ TweenMax.from('.introduction-header h2',0.5,{
 var tl = new TimelineMax({repeat:Infinity, repeatDelay:1, yoyo:true});  
 
 
-tl.from("#sass-logo", 2, {
+TweenMax.from("#sass-logo", 2, {
     x:-1000,
     y:600,
     ease:Elastic.easeOut,
@@ -23,7 +23,7 @@ tl.from("#sass-logo", 2, {
 });
 
 
-TweenMax.from("#gsap-logo", 2, {
+tl.from("#gsap-logo", 2, {
     // x:1500,
     y:-700,
     ease:Elastic.easeOut,
